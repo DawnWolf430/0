@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shinobi-Themed Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: #eee;
+            overflow-x: hidden;
+        }
+        header, section {
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        .section {
+            background: #333;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+            margin-bottom: 20px;
+            padding: 30px;
+        }
+
+        
+        .intro-content h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .intro-content p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .cta-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #101010;
+            background: #faf9f9;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .cta-btn:hover {
+            background: #666;
+        }
+        .study-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .study-card {
+            background: #333;
+            border: 1px solid #555;
+            border-radius: 8px;
+            padding: 20px;
+            width: calc(50% - 20px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+        }
+        .study-card h3 {
+            margin-top: 0;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #555;
+            background: #222;
+            color: #eee;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            background: #444;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact-form button:hover {
+            background: #666;
+        }
+        .music-player {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            background: #000;
+            padding: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .social-media {
+            text-align: center;
+        }
+        .social-media a {
+            display: inline-block;
+            margin: 10px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        .social-media a:hover {
+            color: #ddd;
+        }
+        .social-media i {
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Introduction Section -->
+    <header id="intro" class="section">
+        <div class="intro-content">
+            <h1>Namaste, ahaṁ Mr.Mshinobi asmi</h1>
+            <p>Explorer | Cybersecurity Enthusiast | Mobile Photographer | Blogger</p>
+            <a href="#about" class="cta-btn">Learn More About Me</a>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <h2>Mamma Viṣaye (About Me)</h2>
+        <p>In the shadows of the digital world, I move with the precision of a true Indian Shinobi, mastering the intricate art of Cybersecurity. My journey is one of transformation, navigating a path where both my skills and spirit are honed, preparing me for the ever-evolving battles in the cyber landscape. Every challenge is a trial of my resolve, an opportunity to sharpen my mind and refine my techniques. Yet, my expertise extends beyond the virtual realm; I train in hand-to-hand combat, perfecting my body as a formidable weapon. I capture fleeting moments through mobile photography and let my thoughts flow like ink as I craft stories in my blog. Driven by an insatiable curiosity, I seek not just a fulfilling mission but a life rich in discovery and growth. I thrive in the company of others, drawing strength from teamwork and the exchange of ideas. Adaptation is my essence, and I embrace each new phase with the readiness of a Shinobi, prepared to face whatever the world throws my way.</p>
+    </section>
+
+    <!-- Study Resources Section -->
+    <section id="study" class="section">
+        <h2>Study Resources</h2>
+        <div class="study-container">
+            <div class="study-card">
+                <h3>Cybersecurity</h3>
+                <p>Comprehensive resources and study notes on Cybersecurity.</p>
+                <a href="https://repeated-mind-6c6.notion.site/Cyber-Security-703025d3fb2b4529b776bc7ededb9007" class="cta-btn" target="_blank">Access Cybersecurity Resources</a>
+            </div>
+            <div class="study-card">
+                <h3>Other Studies</h3>
+                <p>Explore my resources on various other topics.</p>
+                <a href="https://repeated-mind-6c6.notion.site/Other-Notes-8c13e44592b24f8d97c25de58e173130" class="cta-btn" target="_blank">Access Other Resources</a>
+            </div>
+            <div class="study-card">
+                <h3>Other Tech</h3>
+                <p>Explore my resources on various other tech.</p>
+                <a href="https://repeated-mind-6c6.notion.site/Other-Tech-64fe1da3a6bb4178b81c0a60c42dd9a7" class="cta-btn" target="_blank">Access Other Resources</a>
+            </div>
+            <div class="study-card">
+                <h3>Book Summaries</h3>
+                <p>Key insights from books I've read.</p>
+                <a href="https://repeated-mind-6c6.notion.site/Book-Summaries-7ead8e73a0b544dbaaaed4208048c4fb" class="cta-btn" target="_blank">Explore Book Summaries</a>
+            </div>
+            <div class="study-card">
+                <h3>Blog</h3>
+                <p>Check out my latest Blog.</p>
+                <a href="https://medium.com/@ganyamarathe1510" class="cta-btn" target="_blank">Visit My Blog</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section id="social-media" class="section social-media">
+        <h2>Connect with Me</h2>
+        <a href="https://x.com/MarutiMarathe4/" target="_blank" title="Twitter"><i class="fa fa-twitter"></i> Twitter</a>
+        <a href="www.linkedin.com/in/maruti-marathe-qwertyu" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i> LinkedIn</a>
+        <a href="https://www.instagram.com/mr.m_1510/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i> Instagram</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Get in Touch</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="cta-btn">Send Message</button>
+        </form>
+    </section>
+
+   <!-- Background Music -->
+<div class="music-player">
+    <audio id="background-music" autoplay loop>
+        <source src="traditional-indian-vina.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
