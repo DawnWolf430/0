@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intro to Land of Dreams</title>
+    <title>Into to Land of Dreams</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -14,11 +15,13 @@
             color: #eee;
             overflow-x: hidden;
         }
+
         header, section {
             padding: 20px;
             margin: 0 auto;
             max-width: 1200px;
         }
+
         .section {
             background: #333;
             border-radius: 10px;
@@ -31,10 +34,12 @@
             font-size: 2.5em;
             margin-bottom: 10px;
         }
+
         .intro-content p {
             font-size: 1.2em;
             margin-bottom: 20px;
         }
+
         .cta-btn {
             display: inline-block;
             padding: 10px 20px;
@@ -43,20 +48,21 @@
             border-radius: 5px;
             text-decoration: none;
             font-weight: bold;
-            transition: background-color 0.3s;
-        }
-        .cta-btn:hover {
-            background: #666;
+            transition: background-color 0.3s, transform 0.3s;
         }
 
-        /* Ensure horizontal scrolling if needed */
+        .cta-btn:hover {
+            background: #666;
+            transform: scale(1.05);
+        }
+
         .study-container {
             display: flex;
+            flex-wrap: nowrap;
             gap: 20px;
-            padding-left: 20px;
-            overflow-x: auto; /* Allows horizontal scrolling if needed */
+            overflow-x: auto;
+            padding-bottom: 10px;
             scrollbar-width: thin;
-            scrollbar-color: #555 #333;
         }
 
         .study-card {
@@ -64,16 +70,23 @@
             border: 1px solid #555;
             border-radius: 8px;
             padding: 20px;
-            min-width: 300px; /* Ensure a minimum width for each card */
+            flex: 0 0 250px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-            flex-shrink: 0; /* Prevents the card from shrinking */
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .study-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
         }
 
         .study-card h3 {
             margin-top: 0;
+            color: #00cccc;
         }
 
-        .contact-form input, .contact-form textarea {
+        .contact-form input,
+        .contact-form textarea {
             width: 100%;
             padding: 10px;
             margin-bottom: 10px;
@@ -82,6 +95,7 @@
             background: #222;
             color: #eee;
         }
+
         .contact-form button {
             padding: 10px 20px;
             background: #444;
@@ -89,11 +103,14 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.3s;
         }
+
         .contact-form button:hover {
             background: #666;
+            transform: scale(1.05);
         }
+
         .music-player {
             position: fixed;
             bottom: 0;
@@ -104,25 +121,31 @@
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
         }
+
         .social-media {
             text-align: center;
         }
+
         .social-media a {
             display: inline-block;
             margin: 10px;
             color: #fff;
             text-decoration: none;
             font-size: 1.2em;
-            transition: color 0.3s;
+            transition: color 0.3s, transform 0.3s;
         }
+
         .social-media a:hover {
             color: #ddd;
+            transform: scale(1.1);
         }
+
         .social-media i {
             font-size: 2em;
         }
     </style>
 </head>
+
 <body>
     <!-- Introduction Section -->
     <header id="intro" class="section">
@@ -136,7 +159,8 @@
     <!-- About Me Section -->
     <section id="about" class="section">
         <h2>Mamma Viṣaye (About Me)</h2>
-        <p>In the shadows of the digital world, I move with the precision of a true Indian Shinobi, mastering the intricate art of Cybersecurity. My journey is one of transformation, navigating a path where both my skills and spirit are honed, preparing me for the ever-evolving battles in the cyber landscape. Every challenge is a trial of my resolve, an opportunity to sharpen my mind and refine my techniques. Yet, my expertise extends beyond the virtual realm; I train in hand-to-hand combat, perfecting my body as a formidable weapon. I capture fleeting moments through mobile photography and let my thoughts flow like ink as I craft stories in my blog. Driven by an insatiable curiosity, I seek not just a fulfilling mission but a life rich in discovery and growth. I thrive in the company of others, drawing strength from teamwork and the exchange of ideas. Adaptation is my essence, and I embrace each new phase with the readiness of a Shinobi, prepared to face whatever the world throws my way.</p>
+        <p>In the shadows of the digital world, I move with the precision of a true Indian Shinobi, mastering the intricate art of Cybersecurity. My journey is one of transformation, navigating a path where both my skills and spirit are honed, preparing me for the ever-evolving battles in the cyber landscape. Every challenge is a trial of my resolve, an opportunity to sharpen my mind and refine my techniques. Yet, my expertise extends beyond the virtual realm; I train in hand-to-hand combat, perfecting my body as a formidable weapon. I capture fleeting moments through mobile photography and let my thoughts flow like ink as I craft stories in my blog. Driven by an insatiable curiosity, I seek not just a fulfilling mission but a life rich in discovery and growth.
+In my quest to make the digital world safer, I also dedicate myself to helping the elderly, spreading awareness about cybersecurity among them. I believe that everyone, regardless of age, deserves to navigate the online world with confidence and security. I thrive in the company of others, drawing strength from teamwork and the exchange of ideas. Adaptation is my essence, and I embrace each new phase with the readiness of a Shinobi, prepared to face whatever the world throws my way.</p>
     </section>
 
     <!-- Study Resources Section -->
@@ -175,7 +199,7 @@
     <section id="social-media" class="section social-media">
         <h2>Connect with Me</h2>
         <a href="https://x.com/MarutiMarathe4/" target="_blank" title="Twitter"><i class="fa fa-twitter"></i> Twitter</a>
-         <a href="https://www.linkedin.com/in/maruti-marathe-qwertyu/" target="_blank">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/maruti-marathe-qwertyu/" target="_blank">LinkedIn</a>
         <a href="https://www.instagram.com/mr.m_1510/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i> Instagram</a>
     </section>
 
@@ -190,14 +214,14 @@
         </form>
     </section>
 
-   <!-- Background Music -->
+    <!-- Background Music -->
     <div class="music-player">
         <audio id="background-music" autoplay loop>
-            <source src="traditional-indian-vina.mp3" type="audio/mpeg">
+            <source src="audio.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
     </div>
 
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
