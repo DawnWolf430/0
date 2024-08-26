@@ -13,11 +13,13 @@
             background-color: #111;
             color: #eee;
             overflow-x: hidden;
+            box-sizing: border-box;
         }
         header, section {
             padding: 20px;
             margin: 0 auto;
-            max-width: 1200px;
+            max-width: 100%;
+            box-sizing: border-box;
         }
         .section {
             background: #333;
@@ -25,6 +27,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
             margin-bottom: 20px;
             padding: 30px;
+            box-sizing: border-box;
         }
         .intro-content h1 {
             font-size: 2.5em;
@@ -49,19 +52,22 @@
         }
         .study-container {
             display: flex;
-            flex-wrap: nowrap; /* Prevent wrapping */
+            flex-wrap: nowrap;
             gap: 20px;
-            overflow-x: auto; /* Enable horizontal scrolling if necessary */
-            padding-bottom: 10px;
+            overflow-x: scroll;
+            padding: 10px 0;
+            box-sizing: border-box;
+            padding-left: 20px;
         }
         .study-card {
             background: #333;
             border: 1px solid #555;
             border-radius: 8px;
             padding: 20px;
-            min-width: 250px; /* Minimum width to make cards uniform */
-            flex-shrink: 0; /* Prevent cards from shrinking */
+            min-width: 250px;
+            flex-shrink: 0;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+            box-sizing: border-box;
         }
         .study-card h3 {
             margin-top: 0;
@@ -74,6 +80,7 @@
             border: 1px solid #555;
             background: #222;
             color: #eee;
+            box-sizing: border-box;
         }
         .contact-form button {
             padding: 10px 20px;
