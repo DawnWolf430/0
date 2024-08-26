@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Into to Land of Dreams</title>
+    <title>Intro to Land of Dreams</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -13,13 +13,11 @@
             background-color: #111;
             color: #eee;
             overflow-x: hidden;
-            box-sizing: border-box;
         }
         header, section {
             padding: 20px;
             margin: 0 auto;
-            max-width: 100%;
-            box-sizing: border-box;
+            max-width: 1200px;
         }
         .section {
             background: #333;
@@ -27,8 +25,8 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
             margin-bottom: 20px;
             padding: 30px;
-            box-sizing: border-box;
         }
+
         .intro-content h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
@@ -50,28 +48,31 @@
         .cta-btn:hover {
             background: #666;
         }
+
+        /* Ensure horizontal scrolling if needed */
         .study-container {
             display: flex;
-            flex-wrap: nowrap;
             gap: 20px;
-            overflow-x: scroll;
-            padding: 10px 0;
-            box-sizing: border-box;
             padding-left: 20px;
+            overflow-x: auto; /* Allows horizontal scrolling if needed */
+            scrollbar-width: thin;
+            scrollbar-color: #555 #333;
         }
+
         .study-card {
             background: #333;
             border: 1px solid #555;
             border-radius: 8px;
             padding: 20px;
-            min-width: 250px;
-            flex-shrink: 0;
+            min-width: 300px; /* Ensure a minimum width for each card */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-            box-sizing: border-box;
+            flex-shrink: 0; /* Prevents the card from shrinking */
         }
+
         .study-card h3 {
             margin-top: 0;
         }
+
         .contact-form input, .contact-form textarea {
             width: 100%;
             padding: 10px;
@@ -80,7 +81,6 @@
             border: 1px solid #555;
             background: #222;
             color: #eee;
-            box-sizing: border-box;
         }
         .contact-form button {
             padding: 10px 20px;
@@ -175,7 +175,7 @@
     <section id="social-media" class="section social-media">
         <h2>Connect with Me</h2>
         <a href="https://x.com/MarutiMarathe4/" target="_blank" title="Twitter"><i class="fa fa-twitter"></i> Twitter</a>
-        <a href="https://www.linkedin.com/in/maruti-marathe-qwertyu/" target="_blank">LinkedIn</a>
+         <a href="https://www.linkedin.com/in/maruti-marathe-qwertyu/" target="_blank">LinkedIn</a>
         <a href="https://www.instagram.com/mr.m_1510/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i> Instagram</a>
     </section>
 
@@ -190,7 +190,7 @@
         </form>
     </section>
 
-    <!-- Background Music -->
+   <!-- Background Music -->
     <div class="music-player">
         <audio id="background-music" autoplay loop>
             <source src="traditional-indian-vina.mp3" type="audio/mpeg">
@@ -199,6 +199,5 @@
     </div>
 
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
 </body>
 </html>
