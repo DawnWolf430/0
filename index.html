@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shinobi-Themed Personal Website</title>
+    <title>Into to Land of Dreams</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -26,8 +26,6 @@
             margin-bottom: 20px;
             padding: 30px;
         }
-
-        
         .intro-content h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
@@ -51,15 +49,18 @@
         }
         .study-container {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap; /* Prevent wrapping */
             gap: 20px;
+            overflow-x: auto; /* Enable horizontal scrolling if necessary */
+            padding-bottom: 10px;
         }
         .study-card {
             background: #333;
             border: 1px solid #555;
             border-radius: 8px;
             padding: 20px;
-            width: calc(50% - 20px);
+            min-width: 250px; /* Minimum width to make cards uniform */
+            flex-shrink: 0; /* Prevent cards from shrinking */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
         }
         .study-card h3 {
@@ -167,7 +168,7 @@
     <section id="social-media" class="section social-media">
         <h2>Connect with Me</h2>
         <a href="https://x.com/MarutiMarathe4/" target="_blank" title="Twitter"><i class="fa fa-twitter"></i> Twitter</a>
-         <a href="https://www.linkedin.com/in/maruti-marathe-qwertyu/" target="_blank">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/maruti-marathe-qwertyu/" target="_blank">LinkedIn</a>
         <a href="https://www.instagram.com/mr.m_1510/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i> Instagram</a>
     </section>
 
@@ -182,13 +183,13 @@
         </form>
     </section>
 
-   <!-- Background Music -->
-<div class="music-player">
-    <audio id="background-music" autoplay loop>
-        <source src="traditional-indian-vina.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-</div>
+    <!-- Background Music -->
+    <div class="music-player">
+        <audio id="background-music" autoplay loop>
+            <source src="traditional-indian-vina.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
 
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
