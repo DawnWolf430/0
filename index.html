@@ -14,7 +14,7 @@
             padding: 0;
             background-color: #111;
             color: #eee;
-            overflow-x: hidden; /* Prevent horizontal overflow */
+            overflow-x: hidden;
         }
 
         header, section {
@@ -36,9 +36,12 @@
             margin-bottom: 10px;
         }
 
-        .intro-content p {
-            font-size: 1.2em;
-            margin-bottom: 20px;
+        /* New class for block color */
+        .intro-content .block-color {
+            background-color: #222; /* Adjust to preferred color */
+            color: #faf9f9;
+            padding: 10px;
+            border-radius: 5px;
         }
 
         .cta-btn {
@@ -59,9 +62,9 @@
 
         .study-container {
             display: flex;
-            flex-wrap: wrap; /* Allow wrapping to prevent overflow */
+            flex-wrap: wrap;
             gap: 20px;
-            overflow-x: hidden; /* Prevent horizontal scrolling */
+            overflow-x: hidden;
             padding-bottom: 10px;
         }
 
@@ -70,8 +73,8 @@
             border: 1px solid #555;
             border-radius: 8px;
             padding: 20px;
-            flex: 1 0 250px; /* Allow flexibility for wrapping */
-            max-width: 250px; /* Prevent cards from growing too wide */
+            flex: 1 0 250px;
+            max-width: 250px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
             transition: transform 0.3s, box-shadow 0.3s;
         }
@@ -120,12 +123,11 @@
         }
     </style>
 </head>
-
 <body>
     <!-- Introduction Section -->
     <header id="intro" class="section">
         <div class="intro-content">
-            <h1>Namaste, ahaṁ Downwolf asmi (CEH)</h1>
+            <h1 class="block-color">Namaste, ahaṁ Mr. Mshinobi asmi (CEH)</h1>
             <p>Explorer | Cybersecurity Enthusiast | Mobile Photographer | Blogger</p>
             <a href="#about" class="cta-btn">Learn More About Me</a>
         </div>
